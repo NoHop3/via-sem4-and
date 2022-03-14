@@ -15,6 +15,7 @@
 | 2  | Critical | As a user I would like to view all the available products in the e-commerce app in order to make a purchase if wanted|   3     | ❌      | 
 | 3  | Critical | As a user I would like to view my current cart/basket in order to see what I have ordered so far|    3     | ❌      |
 | 4  | Critical | As a user I would like to view my current cart/basket in order to see what I have ordered so far|    5     | ❌      |
+| 3  | Critical | As a user I would like to view my current cart/basket in order to see what I have ordered so far|    3     | ❌      |
 
 
 ### Progress bar
