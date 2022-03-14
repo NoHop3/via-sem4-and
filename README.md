@@ -13,7 +13,9 @@
 | -- | -------  |:-------------:| :--------:| :------: | 
 | 1  | Critical | As a user I would like to login in order to access the app and pass the autherization process| 3     | ❌      | 
 | 2  | Critical | As a user I would like to view all the available products in the e-commerce app in order to make a purchase if wanted|   3     | ❌      | 
-| 3  | Critical | As a user I would like to view my current cart/basket in order to see what I have ordered so far|    3     | ❌      | 
+| 3  | Critical | As a user I would like to view my current cart/basket in order to see what I have ordered so far|    3     | ❌      |
+| 4  | Critical | As a user I would like to view my current cart/basket in order to see what I have ordered so far|    5     | ❌      |
+
 
 ### Progress bar
 - [x] Initial commit of the app (14.03.2022)
