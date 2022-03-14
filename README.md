@@ -15,7 +15,7 @@
 | 2  | Critical | As a user I would like to view all the available songs in the music library in order to make a playlist if wanted|   3     | ❌      | 
 | 3  | Critical | As a user I would like to view my current playlist in order to see what I have added so far|    5     | ❌      |
 | 4  | Critical | As a user I would like to view my current favourites in order to see what I have added so far|    5     | ❌      |
-
+| 5  | Critical | As a user I would like to view my current favourites in order to see what I have added so far|    5     | ❌      |
 
 ### Progress bar
 - [x] Initial commit of the app (14.03.2022)
