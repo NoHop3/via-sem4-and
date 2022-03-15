@@ -11,13 +11,13 @@
 
 | ID | Priority | Description   | Estimate  | Approved | 
 | -- | -------  |:-------------:| :--------:| :------: | 
-| 1  | Critical | As a user I would like to login in order to access the app and pass the autherization process| 3     | ❌      | 
-| 2  | Critical | As a user I would like to view all the available songs in the music library in order to make a playlist if wanted|   3     | ❌      | 
+| 1  | Critical | As a user I would like to login in order to access the app and pass the autherization process| 5    | ❌      | 
+| 2  | Critical | As a user I would like to view all the available songs in the music library in order to make a playlist if wanted|   5     | ❌      | 
 | 3  | Critical | As a user I would like to view my current playlist in order to see what I have added so far|    5     | ❌      |
 | 4  | Critical | As a user I would like to view my current favourites in order to see what I have added so far|    5     | ❌      |
 | 5  | Critical | As a user I would like to view my current favourites in order to see what I have added so far|    5     | ❌      |
 | 6  | High | As a User I would like to sort the songs by genre, artist, mood, date added|    3     | ❌      |
-| 7  |  |As a User I would like to  |    5     | ❌      |
+| 7  | High | As a User I would like to search for a particular song in order to quickly play a song I am looking for.  |    3     | ❌      |
 
 ### Progress bar
 - [x] Initial commit of the app (14.03.2022)
