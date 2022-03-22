@@ -19,6 +19,7 @@
 | 7  | High | As a User I would like to sort the songs by genre, artist, mood, date added|    3     | ❌      |
 | 8  | High | As a User I would like to search for a particular song in order to quickly play a song I am looking for.  |    3     | ❌      |
 | 9  | Low | As a user I would like to follow other users to see their playlists  |    3     | ❌      |
+| 10  | Low | As a user I would like to add other users' playlists to my library  |    3     | ❌      |
 
 ### Progress bar
 - [x] Initial commit of the app (14.03.2022)
