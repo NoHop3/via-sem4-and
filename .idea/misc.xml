@@ -9,8 +9,12 @@
         <entry key="..\:/Users/bird/AndroidStudioProjects/Androidappdemo/app/src/main/res/layout/content_nav_drawer.xml" value="0.15489130434782608" />
         <entry key="..\:/Users/bird/AndroidStudioProjects/Androidappdemo/app/src/main/res/layout/fragment_gallery.xml" value="0.15489130434782608" />
         <entry key="..\:/Users/bird/AndroidStudioProjects/Androidappdemo/app/src/main/res/layout/fragment_home.xml" value="0.15489130434782608" />
+        <entry key="..\:/Users/bird/AndroidStudioProjects/Androidappdemo/app/src/main/res/layout/fragment_product_list.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/bird/AndroidStudioProjects/Androidappdemo/app/src/main/res/layout/fragment_shopping_list.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/bird/AndroidStudioProjects/Androidappdemo/app/src/main/res/layout/nav_header_nav_drawer.xml" value="0.15489130434782608" />
-        <entry key="..\:/Users/bird/AndroidStudioProjects/Androidappdemo/app/src/main/res/menu/activity_main_drawer.xml" value="0.11302083333333333" />
+        <entry key="..\:/Users/bird/AndroidStudioProjects/Androidappdemo/app/src/main/res/layout/previous_shoppings_fragment.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/bird/AndroidStudioProjects/Androidappdemo/app/src/main/res/menu/activity_main_drawer.xml" value="0.4" />
+        <entry key="..\:/Users/bird/AndroidStudioProjects/Androidappdemo/app/src/main/res/menu/nav_drawer.xml" value="0.25416666666666665" />
       </map>
     </option>
   </component>
