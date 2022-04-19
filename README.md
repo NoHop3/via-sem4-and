@@ -1,4 +1,4 @@
-### Music library android app made for the AND Course (Semester 4) at VIA University College. 
+### Shopping list android app made for the AND Course (Semester 4) at VIA University College. 
 ![Image](https://upload.wikimedia.org/wikipedia/commons/5/5d/VIA_UC_logo.png)
 
 ### App Requirements
@@ -11,16 +11,13 @@
 
 | ID | Priority | Description   | Estimate  | Approved | 
 | -- | -------  |:-------------:| :--------:| :------: | 
-| 1  | Critical | As a user I would like to login in order to access the app and pass the autherization process| 5    | ❌      | 
-| 2  | Critical | As a user I would like to view all the available songs in the music library in order to make a playlist if wanted|   5     | ❌      | 
-| 3  | Critical | As a user I would like to view my current playlist in order to see what I have added so far|    5     | ❌      |
+| 2  | Critical | As a user I would like to view all the available products in the grocery store/supermarket in order to make a shopping list|   5     | ❌      | 
+| 3  | Critical | As a user I would like to view my current shopping list in order to see what I have added so far|    5     | ❌      |
 | 5  | Critical | As a user I would like to view my current favourites in order to see what I have added so far|    5     | ❌      |
-| 6  | Critical | As a User I would like to add a particular song in my playlist in order to have it saved.  |    3     | ❌      |
-| 7  | High | As a User I would like to sort the songs by genre, artist, mood, date added|    3     | ❌      |
-| 8  | High | As a User I would like to search for a particular song in order to quickly play a song I am looking for.  |    3     | ❌      |
-| 9  | Low | As a user I would like to follow other users to see their playlists  |    3     | ❌      |
-| 10  | Low | As a user I would like to add other users' playlists to my library  |    3     | ❌      |
-| 11  | Low | As a user I would like to add songs to the music library  |    4    | ❌      |
+| 6  | Critical | As a User I would like to add a particular product in my shopping list in order to have it saved.  |    3     | ❌      |
+| 7  | High | As a User I would like to sort the products by name, price, quantity, brand and category|    3     | ❌      |
+| 8  | High | As a User I would like to search for a particular product in order to quickly add a product I am looking for.  |    3     | ❌      |
+| 11  | Low | As a user I would like to add products to the shoppping list  |    4    | ❌      |
 
 ### Progress bar
 - [x] Initial commit of the app (14.03.2022)
