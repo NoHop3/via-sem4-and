@@ -13,11 +13,10 @@
 | -- | -------  |:-------------:| :--------:| :------: | 
 | 1  | Critical | As a user I would like to view all the available products in the grocery store/supermarket in order to make a shopping list|   5     | ❌      | 
 | 2  | Critical | As a user I would like to view my current shopping list in order to see what I have added so far|    5     | ❌      |
-| 3  | Critical | As a user I would like to view my current favourites in order to see what I have added so far|    5     | ❌      |
-| 4  | Critical | As a User I would like to add a particular product in my shopping list in order to have it saved.  |    3     | ❌      |
-| 5  | High | As a User I would like to sort the products by name, price, quantity, brand and category|    3     | ❌      |
-| 6  | High | As a User I would like to search for a particular product in order to quickly add a product I am looking for.  |    3     | ❌      |
-| 7  | Low | As a user I would like to add products to the shoppping list  |    4    | ❌      |
+| 3  | As a user I would like to filter the products in order to have an easier search|    5     | ❌      |
+| 4  | High | As a User I would like to sort the products by name, price, quantity, brand and category|    3     | ❌      |
+| 5  | High | As a User I would like to search for a particular product in order to quickly add a product I am looking for.  |    3     | ❌      |
+
 
 ### Progress bar
 - [x] Initial commit of the app (14.03.2022)
