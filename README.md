@@ -11,7 +11,7 @@
 
 | ID | Priority | Description   | Estimate  | Approved | 
 | -- | -------  |:-------------:| :--------:| :------: | 
-| 2  | Critical | As a user I would like to view all the available products in the grocery sore/supermarket in order to make a shopping list|   5     | ❌      | 
+| 2  | Critical | As a user I would like to view all the available products in the grocery store/supermarket in order to make a shopping list|   5     | ❌      | 
 | 3  | Critical | As a user I would like to view my current shopping list in order to see what I have added so far|    5     | ❌      |
 | 5  | Critical | As a user I would like to view my current favourites in order to see what I have added so far|    5     | ❌      |
 | 6  | Critical | As a User I would like to add a particular product in my shopping list in order to have it saved.  |    3     | ❌      |
