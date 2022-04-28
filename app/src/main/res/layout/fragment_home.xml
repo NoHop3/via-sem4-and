@@ -4,13 +4,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     android:background="@color/orange"
+    android:orientation="vertical"
     tools:context=".ui.home.HomeFragment">
 
     <androidx.appcompat.widget.Toolbar
         android:layout_width="match_parent"
-        android:layout_height="?attr/actionBarSize">
+        android:layout_height="?attr/actionBarSize"
+        android:gravity="center_vertical">
+
         <RelativeLayout
             android:gravity="center"
             android:layout_width="match_parent"
@@ -40,11 +42,12 @@
         </RelativeLayout>
     </androidx.appcompat.widget.Toolbar>
 
+
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recycler_random"
-        android:layout_margin="4dp"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
+        android:layout_height="match_parent"
+        android:layout_margin="4dp" />
 
     <ImageView
         android:id="@+id/imageView4"
