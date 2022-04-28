@@ -11,6 +11,7 @@ import android.widget.Spinner;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
+import androidx.appcompat.widget.SearchView;
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
@@ -26,13 +27,14 @@ import java.util.List;
 
 public class HomeFragment extends Fragment {
 
-    private RecyclerView recyclerView;
-    private RandomRecipeAdapter randomRecipeAdapter;
-    private ProgressDialog dialog;
-    private RequestManager manager;
-    private Spinner spinner;
-    private List<String> tags;
+    RecyclerView recyclerView;
+    RandomRecipeAdapter randomRecipeAdapter;
+    ProgressDialog dialog;
+    RequestManager manager;
+    Spinner spinner;
+    List<String> tags;
     ArrayAdapter arrayAdapter;
+    SearchView searchView;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
@@ -43,7 +45,31 @@ public class HomeFragment extends Fragment {
         dialog = new ProgressDialog(view.getContext());
         dialog.setTitle("Loading....");
 
-        //Cause of error -> spinner = spinner.findViewById(R.id.spinner_tags) you cannot do that!!!!
+        searchView = view.findViewById(R.id.searchView_home);
+        searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
+            @Override
+            public boolean onQueryTextSubmit(String query) {
+                tags.clear();
+                tags.add(query);
+                manager.getRandomRecipes(randomRecipeResponseListener, tags);
+                dialog.show();
+                return true;
+            }
+
+            @Override
+            public boolean onQueryTextChange(String newText) {
+                return false;
+            }
+        });
+
+        // Cause of error #1-> spinner = spinner.findViewById() you cannot do that because spinner is not initialized!!!!
+        // Cause of error #2-> context is accessible via view.getContext() not "this"!!!
+        // Cause of error code
+        /**
+         * spinner.findViewById(R.id.spinner_tags)
+         * arrayAdapter = ArrayAdapter.createFromResource(this, R.array.tags, R.layout.spinner_text);
+         */
+        //Correct code bellow
         spinner = view.findViewById(R.id.spinner_tags);
         arrayAdapter = ArrayAdapter.createFromResource(view.getContext(), R.array.tags, R.layout.spinner_text);
         arrayAdapter.setDropDownViewResource(R.layout.spinner_inner_text);
