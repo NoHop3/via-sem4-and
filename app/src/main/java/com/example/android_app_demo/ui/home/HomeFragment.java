@@ -1,5 +1,6 @@
 package com.example.android_app_demo.ui.home;
 
+import android.annotation.SuppressLint;
 import android.app.ProgressDialog;
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -13,14 +14,18 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.appcompat.widget.SearchView;
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentTransaction;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.android_app_demo.R;
 import com.example.android_app_demo.adapters.RandomRecipeAdapter;
 import com.example.android_app_demo.listeners.RandomRecipeResponseListener;
+import com.example.android_app_demo.listeners.RecipeClickListener;
 import com.example.android_app_demo.models.RandomRecipeApiResponse;
 import com.example.android_app_demo.requestManager.RequestManager;
+import com.example.android_app_demo.ui.chosenRecipe.ChosenRecipeFragment;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -38,6 +43,10 @@ public class HomeFragment extends Fragment {
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
+
+//        FragmentTransaction fragmentTransaction = getParentFragmentManager().beginTransaction();
+//        fragmentTransaction.replace(R.)
+        System.out.println("Fragments: "+getParentFragmentManager().getFragments());
 
         tags = new ArrayList<>();
         View view = inflater.inflate(R.layout.fragment_home, container, false);
@@ -79,8 +88,8 @@ public class HomeFragment extends Fragment {
         manager = new RequestManager(view.getContext());
         recyclerView = view.findViewById(R.id.recycler_random);
 
-        manager.getRandomRecipes(randomRecipeResponseListener, tags);
-        dialog.show();
+//        manager.getRandomRecipes(randomRecipeResponseListener, tags);
+//        dialog.show();
 
         return view;
     }
@@ -91,7 +100,7 @@ public class HomeFragment extends Fragment {
             dialog.dismiss();
             recyclerView.setHasFixedSize(true);
             recyclerView.setLayoutManager(new GridLayoutManager(HomeFragment.super.requireContext(), 1));
-            randomRecipeAdapter = new RandomRecipeAdapter(HomeFragment.super.requireContext(), response.recipes);
+            randomRecipeAdapter = new RandomRecipeAdapter(HomeFragment.super.requireContext(), response.recipes, recipeClickListener);
             recyclerView.setAdapter(randomRecipeAdapter);
         }
 
@@ -115,6 +124,18 @@ public class HomeFragment extends Fragment {
         }
     };
 
+    private final RecipeClickListener recipeClickListener = new RecipeClickListener() {
+        @SuppressLint("ResourceType")
+        @Override
+        public void onRecipeClick(String id) {
+
+            Fragment fragment = new ChosenRecipeFragment(id);
+            FragmentTransaction fragmentTransaction = getParentFragmentManager().beginTransaction();
+            fragmentTransaction.replace(getId(), fragment);
+            fragmentTransaction.addToBackStack(null);
+            fragmentTransaction.commit();
+        }//
+    };
 
     @Override
     public void onDestroyView() {
