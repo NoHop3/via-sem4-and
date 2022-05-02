@@ -131,7 +131,7 @@ public class HomeFragment extends Fragment {
 
             Fragment fragment = new ChosenRecipeFragment(id);
             FragmentTransaction fragmentTransaction = getParentFragmentManager().beginTransaction();
-            fragmentTransaction.replace(getId(), fragment);
+            fragmentTransaction.replace(R.id.nav_home, fragment);
             fragmentTransaction.addToBackStack(null);
             fragmentTransaction.commit();
         }//
