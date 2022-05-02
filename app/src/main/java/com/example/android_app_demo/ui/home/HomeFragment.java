@@ -16,9 +16,13 @@ import androidx.appcompat.widget.SearchView;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
+import androidx.lifecycle.ViewModelProvider;
+import androidx.navigation.fragment.NavHostFragment;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.android_app_demo.NavDrawerActivity;
+import com.example.android_app_demo.NavDrawerViewModel;
 import com.example.android_app_demo.R;
 import com.example.android_app_demo.adapters.RandomRecipeAdapter;
 import com.example.android_app_demo.listeners.RandomRecipeResponseListener;
@@ -46,7 +50,7 @@ public class HomeFragment extends Fragment {
 
 //        FragmentTransaction fragmentTransaction = getParentFragmentManager().beginTransaction();
 //        fragmentTransaction.replace(R.)
-        System.out.println("Fragments: "+getParentFragmentManager().getFragments());
+//        System.out.println("Fragments: "+getParentFragmentManager().getFragments());
 
         tags = new ArrayList<>();
         View view = inflater.inflate(R.layout.fragment_home, container, false);
@@ -128,13 +132,13 @@ public class HomeFragment extends Fragment {
         @SuppressLint("ResourceType")
         @Override
         public void onRecipeClick(String id) {
+            int idToPass = Integer.parseInt(id);
 
-            Fragment fragment = new ChosenRecipeFragment(id);
-            FragmentTransaction fragmentTransaction = getParentFragmentManager().beginTransaction();
-            fragmentTransaction.replace(R.id.nav_home, fragment);
-            fragmentTransaction.addToBackStack(null);
-            fragmentTransaction.commit();
-        }//
+            NavDrawerViewModel viewModel = new ViewModelProvider(HomeFragment.super.requireActivity()).get(NavDrawerViewModel.class);
+            viewModel.setId(idToPass);
+
+            NavHostFragment.findNavController(HomeFragment.this).navigate(R.id.chosenRecipeFragment);
+        }
     };
 
     @Override

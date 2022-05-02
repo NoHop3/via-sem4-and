@@ -25,6 +25,8 @@ public class NavDrawerActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
+        NavDrawerViewModel viewModel = new NavDrawerViewModel();
+
         binding = ActivityNavDrawerBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 

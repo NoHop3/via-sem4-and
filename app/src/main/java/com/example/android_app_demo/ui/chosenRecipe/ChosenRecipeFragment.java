@@ -11,14 +11,18 @@ import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
+import androidx.lifecycle.MutableLiveData;
+import androidx.lifecycle.ViewModelProvider;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.android_app_demo.NavDrawerViewModel;
 import com.example.android_app_demo.R;
 import com.example.android_app_demo.adapters.IngredientsAdapter;
 import com.example.android_app_demo.listeners.RecipeDetailsListener;
 import com.example.android_app_demo.models.RecipeDetailsResponse;
 import com.example.android_app_demo.requestManager.RequestManager;
+import com.example.android_app_demo.ui.home.HomeFragment;
 import com.squareup.picasso.Picasso;
 
 
@@ -32,11 +36,11 @@ public class ChosenRecipeFragment extends Fragment {
     ProgressDialog dialog;
     IngredientsAdapter ingredientsAdapter;
 
-    public ChosenRecipeFragment(String id) {
-        this.id = Integer.parseInt(id);
-    }
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
+
+        NavDrawerViewModel viewModel = new ViewModelProvider(ChosenRecipeFragment.super.requireActivity()).get(NavDrawerViewModel.class);
+        id = viewModel.getId();
 
         View view = inflater.inflate(R.layout.fragment_recipe_details, container, false);
         findViews(view);
