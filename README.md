@@ -13,7 +13,7 @@
 | -- | -------  |:-------------:| :--------:| :------: | 
 | 1  | Critical | As a user I would like to view random (trendy) available recipes in the app so that I can choose my next meal. 😆 |   8     | ✔️ | 
 | 2  | High | As a user I would like to view the nutritional information for a recipe so I would know more about it.|    5     | ❌      |
-| 3  | High | As a user I would like to filter the recipes in order to have an easier search for a planned cooking session. 🤣 |    5     | ❌      |
+| 3  | High | As a user I would like to filter the recipes by category in order to have an easier search for a planned cooking session. 🤣 |    5     | ✔️      |
 | 4  | High | As a User I would like to search the recipes by name so I would quickly find a recipe in mind.|    5     | ✔️      |
 | 5  | High | As a User I would like to see the requried ingredients I need for a recipe in order to cook it.|    5     | ✔️      |
 | 6  | Low | As a User I would like to see the required equipment I need for a recipe in order to make it.  |    3     | ❌      |
