@@ -5,8 +5,10 @@ import android.content.Context;
 import com.example.android_app_demo.R;
 import com.example.android_app_demo.listeners.RandomRecipeResponseListener;
 import com.example.android_app_demo.listeners.RecipeDetailsListener;
+import com.example.android_app_demo.listeners.SimilarRecipesListener;
 import com.example.android_app_demo.models.RandomRecipeApiResponse;
 import com.example.android_app_demo.models.RecipeDetailsResponse;
+import com.example.android_app_demo.models.SimilarRecipesResponse;
 
 import java.util.List;
 
@@ -68,6 +70,28 @@ public class RequestManager {
         });
     }
 
+    public void getSimilarRecipes(SimilarRecipesListener listener, int id )
+    {
+        CallSimilarRecipes callSimilarRecipes = retrofit.create(CallSimilarRecipes.class);
+        Call<List<SimilarRecipesResponse>> call = callSimilarRecipes.callSimilarRecipes(id, "4", context.getString(R.string.api_key));
+        call.enqueue(new Callback<List<SimilarRecipesResponse>>() {
+            @Override
+            public void onResponse(Call<List<SimilarRecipesResponse>> call, Response<List<SimilarRecipesResponse>> response) {
+                if (!response.isSuccessful()){
+                    listener.didError(response.message());
+                    return;
+                }
+                listener.didFetch(response.body(), response.message());
+            }
+
+            @Override
+            public void onFailure(Call<List<SimilarRecipesResponse>> call, Throwable t) {
+            listener.didError(t.getMessage());
+            }
+        });
+    }
+
+
     private interface CallRandomRecipes {
         @GET("recipes/random")
         Call<RandomRecipeApiResponse> callRandomRecipe(
@@ -81,6 +105,15 @@ public class RequestManager {
         @GET("recipes/{id}/information")
         Call<RecipeDetailsResponse> callRecipeDetails(
                 @Path("id") int id,
+                @Query("apiKey") String apiKey
+        );
+    }
+
+    private interface CallSimilarRecipes{
+        @GET ("recipes/{id}/similar")
+        Call<List<SimilarRecipesResponse>> callSimilarRecipes(
+                @Path("id") int id,
+                @Query("number") String number,
                 @Query("apiKey") String apiKey
         );
     }
