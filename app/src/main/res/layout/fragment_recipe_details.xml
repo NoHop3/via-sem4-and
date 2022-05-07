@@ -23,10 +23,16 @@
             android:textSize="20sp"
             android:gravity="center"
             android:textColor="@color/white"
+            android:maxLines="5"
             android:padding="8dp"
             android:textStyle="bold"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_meal_instructions"
+                android:layout_margin="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
         <TextView
             android:id="@+id/textView_meal_source"
             android:text="Source"

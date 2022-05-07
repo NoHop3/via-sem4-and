@@ -21,10 +21,13 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.example.android_app_demo.NavDrawerViewModel;
 import com.example.android_app_demo.R;
 import com.example.android_app_demo.adapters.IngredientsAdapter;
+import com.example.android_app_demo.adapters.InstructionsAdapter;
 import com.example.android_app_demo.adapters.SimilarRecipeAdapter;
+import com.example.android_app_demo.listeners.InstructionsListener;
 import com.example.android_app_demo.listeners.RecipeClickListener;
 import com.example.android_app_demo.listeners.RecipeDetailsListener;
 import com.example.android_app_demo.listeners.SimilarRecipesListener;
+import com.example.android_app_demo.models.InstructionsResponse;
 import com.example.android_app_demo.models.Recipe;
 import com.example.android_app_demo.models.RecipeDetailsResponse;
 import com.example.android_app_demo.models.SimilarRecipesResponse;
@@ -40,11 +43,12 @@ public class ChosenRecipeFragment extends Fragment {
     private int id;
     TextView textView_meal_name, textView_meal_source, textView_meal_summary;
     ImageView imageView_meal_image;
-    RecyclerView recycler_meal_ingredients, recycler_meal_similar;
+    RecyclerView recycler_meal_ingredients, recycler_meal_similar, getRecycler_meal_instructions;
     RequestManager manager;
     ProgressDialog dialog;
     IngredientsAdapter ingredientsAdapter;
     SimilarRecipeAdapter similarRecipeAdapter;
+    InstructionsAdapter instructionsAdapter;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
@@ -57,6 +61,7 @@ public class ChosenRecipeFragment extends Fragment {
         manager = new RequestManager(view.getContext());
         manager.getRecipeDetails(recipeDetailsListener, id);
         manager.getSimilarRecipes(similarRecipesListener, id);
+        manager.getInstructions(instructionsListener, id);
         dialog = new ProgressDialog(view.getContext());
         dialog.setTitle("Loading details");
         dialog.show();
@@ -70,6 +75,7 @@ public class ChosenRecipeFragment extends Fragment {
         imageView_meal_image = view.findViewById(R.id.imageView_meal_image);
         recycler_meal_ingredients = view.findViewById(R.id.recycler_meal_ingredients);
         recycler_meal_similar = view.findViewById(R.id.recycler_meal_similar);
+        getRecycler_meal_instructions = view.findViewById(R.id.recycler_meal_instructions);
     }
 
     private final RecipeDetailsListener recipeDetailsListener = new RecipeDetailsListener() {
@@ -112,6 +118,21 @@ public class ChosenRecipeFragment extends Fragment {
         public void onRecipeClick(String id) {
                 startActivity(new Intent(ChosenRecipeFragment.view.getContext(), ChosenRecipeFragment.class)
                 .putExtra("id", id));
+        }
+    };
+    private final InstructionsListener instructionsListener = new InstructionsListener() {
+        @Override
+        public void didFetch(List<InstructionsResponse> response, String message) {
+            getRecycler_meal_instructions.setHasFixedSize(true);
+            getRecycler_meal_instructions.setLayoutManager(new LinearLayoutManager(ChosenRecipeFragment.view.getContext(), LinearLayoutManager.VERTICAL, false));
+            instructionsAdapter = new InstructionsAdapter(ChosenRecipeFragment.view.getContext, response);
+
+            getRecycler_meal_instructions.setAdapter(instructionsAdapter);
+        }
+
+        @Override
+        public void didError(String message) {
+
         }
     };
 
