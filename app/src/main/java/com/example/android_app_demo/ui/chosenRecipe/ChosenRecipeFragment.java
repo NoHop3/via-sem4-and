@@ -13,6 +13,7 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
+import androidx.navigation.fragment.NavHostFragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -112,8 +113,17 @@ public class ChosenRecipeFragment extends Fragment {
     private final RecipeClickListener recipeClickListener = new RecipeClickListener() {
         @Override
         public void onRecipeClick(String id) {
-                startActivity(new Intent(ChosenRecipeFragment.this.getView().getContext(), ChosenRecipeFragment.class)
-                .putExtra("id", id));
+            int idToPass = Integer.parseInt(id);
+
+            NavDrawerViewModel viewModel = new ViewModelProvider(ChosenRecipeFragment.super.requireActivity()).get(NavDrawerViewModel.class);
+            viewModel.setId(idToPass);
+
+            NavHostFragment.findNavController(ChosenRecipeFragment.this).navigate(R.id.chosenRecipeFragment);
+
+//            NavDrawerViewModel viewModel = new ViewModelProvider(ChosenRecipeFragment.super.requireActivity()).get(NavDrawerViewModel.class);
+//            viewModel.setId(idToPass);
+//                startActivity(new Intent(ChosenRecipeFragment.this.getView().getContext(), ChosenRecipeFragment.class)
+//                .putExtra("id", id));
         }
     };
     private final InstructionsListener instructionsListener = new InstructionsListener() {
