@@ -25,6 +25,8 @@ public class NavDrawerActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
+
+
         NavDrawerViewModel viewModel = new NavDrawerViewModel();
 
         binding = ActivityNavDrawerBinding.inflate(getLayoutInflater());
@@ -49,7 +51,10 @@ public class NavDrawerActivity extends AppCompatActivity {
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment_content_nav_drawer);
         NavigationUI.setupActionBarWithNavController(this, navController, mAppBarConfiguration);
         NavigationUI.setupWithNavController(navigationView, navController);
+
+
     }
+
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
