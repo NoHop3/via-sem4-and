@@ -43,7 +43,7 @@ public class ChosenRecipeFragment extends Fragment {
     private int id;
     TextView textView_meal_name, textView_meal_source, textView_meal_summary;
     ImageView imageView_meal_image;
-    RecyclerView recycler_meal_ingredients, recycler_meal_similar, getRecycler_meal_instructions;
+    RecyclerView recycler_meal_ingredients, recycler_meal_similar, recycler_meal_instructions;
     RequestManager manager;
     ProgressDialog dialog;
     IngredientsAdapter ingredientsAdapter;
@@ -75,7 +75,7 @@ public class ChosenRecipeFragment extends Fragment {
         imageView_meal_image = view.findViewById(R.id.imageView_meal_image);
         recycler_meal_ingredients = view.findViewById(R.id.recycler_meal_ingredients);
         recycler_meal_similar = view.findViewById(R.id.recycler_meal_similar);
-        getRecycler_meal_instructions = view.findViewById(R.id.recycler_meal_instructions);
+        recycler_meal_instructions = view.findViewById(R.id.recycler_meal_instructions);
     }
 
     private final RecipeDetailsListener recipeDetailsListener = new RecipeDetailsListener() {
@@ -123,11 +123,11 @@ public class ChosenRecipeFragment extends Fragment {
     private final InstructionsListener instructionsListener = new InstructionsListener() {
         @Override
         public void didFetch(List<InstructionsResponse> response, String message) {
-            getRecycler_meal_instructions.setHasFixedSize(true);
-            getRecycler_meal_instructions.setLayoutManager(new LinearLayoutManager(ChosenRecipeFragment.this.getView().getContext(), LinearLayoutManager.VERTICAL, false));
+            recycler_meal_instructions.setHasFixedSize(true);
+            recycler_meal_instructions.setLayoutManager(new LinearLayoutManager(ChosenRecipeFragment.this.getView().getContext(), LinearLayoutManager.VERTICAL, false));
             instructionsAdapter = new InstructionsAdapter(ChosenRecipeFragment.this.getView().getContext(), response);
 
-            getRecycler_meal_instructions.setAdapter(instructionsAdapter);
+            recycler_meal_instructions.setAdapter(instructionsAdapter);
         }
 
         @Override

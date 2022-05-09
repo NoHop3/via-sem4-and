@@ -37,7 +37,7 @@ public class InstructionsEquipmentsAdapter extends RecyclerView.Adapter<Instruct
     public void onBindViewHolder(@NonNull InstructionEquipmentsViewHolder holder, int position) {
         holder.textView_instructions_step_items.setText(list.get(position).name);
         holder.textView_instructions_step_items.setSelected(true);
-        Picasso.get().load("https://spoonacular.com/cdn/equipments_100x100/" + list.get(position).image).into(holder.imageView_instructions_step_items);
+        Picasso.get().load("https://spoonacular.com/cdn/equipment_100x100/" + list.get(position).image).into(holder.imageView_instructions_step_items);
 
 
 

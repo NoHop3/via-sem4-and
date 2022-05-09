@@ -51,7 +51,7 @@ public class InstructionsStepAdapter extends RecyclerView.Adapter<InstructionsSt
         return list.size();
     }
 }
-class InstructionsStepViewHolder extends RecyclerView.ViewHolder {
+class  InstructionsStepViewHolder extends RecyclerView.ViewHolder {
 
     TextView textView_instructions_step_number, textView_instructions_step_title;
     RecyclerView recycler_instructions_equipments, recycler_instructions_ingredients;
