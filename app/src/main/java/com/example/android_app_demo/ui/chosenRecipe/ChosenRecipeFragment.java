@@ -102,21 +102,21 @@ public class ChosenRecipeFragment extends Fragment {
         @Override
         public void didFetch(List<SimilarRecipesResponse> response, String message) {
             recycler_meal_similar.setHasFixedSize(true);
-            recycler_meal_similar.setLayoutManager(new LinearLayoutManager(ChosenRecipeFragment.view.getContext(), LinearLayoutManager.HORIZONTAL, false));
-            similarRecipeAdapter = new SimilarRecipeAdapter(ChosenRecipeFragment.view.getContext(), response, recipeClickListener);
+            recycler_meal_similar.setLayoutManager(new LinearLayoutManager(ChosenRecipeFragment.this.getView().getContext(), LinearLayoutManager.HORIZONTAL, false));
+            similarRecipeAdapter = new SimilarRecipeAdapter(ChosenRecipeFragment.this.getView().getContext(), response, recipeClickListener);
             recycler_meal_similar.setAdapter(similarRecipeAdapter);
         }
 
         @Override
         public void didError(String message) {
-            Toast.makeText(ChosenRecipeFragment.view.getContext(), message, Toast.LENGTH_SHORT).show();
+            Toast.makeText(ChosenRecipeFragment.this.getView().getContext(), message, Toast.LENGTH_SHORT).show();
 
         }
     };
     private final RecipeClickListener recipeClickListener = new RecipeClickListener() {
         @Override
         public void onRecipeClick(String id) {
-                startActivity(new Intent(ChosenRecipeFragment.view.getContext(), ChosenRecipeFragment.class)
+                startActivity(new Intent(ChosenRecipeFragment.this.getView().getContext(), ChosenRecipeFragment.class)
                 .putExtra("id", id));
         }
     };
@@ -124,8 +124,8 @@ public class ChosenRecipeFragment extends Fragment {
         @Override
         public void didFetch(List<InstructionsResponse> response, String message) {
             getRecycler_meal_instructions.setHasFixedSize(true);
-            getRecycler_meal_instructions.setLayoutManager(new LinearLayoutManager(ChosenRecipeFragment.view.getContext(), LinearLayoutManager.VERTICAL, false));
-            instructionsAdapter = new InstructionsAdapter(ChosenRecipeFragment.view.getContext, response);
+            getRecycler_meal_instructions.setLayoutManager(new LinearLayoutManager(ChosenRecipeFragment.this.getView().getContext(), LinearLayoutManager.VERTICAL, false));
+            instructionsAdapter = new InstructionsAdapter(ChosenRecipeFragment.this.getView().getContext(), response);
 
             getRecycler_meal_instructions.setAdapter(instructionsAdapter);
         }

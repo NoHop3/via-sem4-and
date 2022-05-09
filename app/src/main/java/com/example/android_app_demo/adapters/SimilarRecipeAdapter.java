@@ -2,6 +2,7 @@ package com.example.android_app_demo.adapters;
 
 import android.content.Context;
 import android.media.Image;
+import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
@@ -34,7 +35,7 @@ public class SimilarRecipeAdapter  extends  RecyclerView.Adapter<SimilarRecipeVi
     @NonNull
     @Override
     public SimilarRecipeViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        return new SimilarRecipeViewHolder(LayoutInflator.from(context).inflate(R.layout.list_similar_recipe, parent, false ));
+        return new SimilarRecipeViewHolder(LayoutInflater.from(context).inflate(R.layout.list_similar_recipe, parent, false ));
 
     }
 
