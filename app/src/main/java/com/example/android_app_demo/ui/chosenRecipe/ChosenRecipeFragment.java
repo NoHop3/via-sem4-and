@@ -7,18 +7,16 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
-import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
-import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModelProvider;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.android_app_demo.NavDrawerViewModel;
+import com.example.android_app_demo.viewModels.NavDrawerViewModel;
 import com.example.android_app_demo.R;
 import com.example.android_app_demo.adapters.IngredientsAdapter;
 import com.example.android_app_demo.adapters.InstructionsAdapter;
@@ -28,11 +26,9 @@ import com.example.android_app_demo.listeners.RecipeClickListener;
 import com.example.android_app_demo.listeners.RecipeDetailsListener;
 import com.example.android_app_demo.listeners.SimilarRecipesListener;
 import com.example.android_app_demo.models.InstructionsResponse;
-import com.example.android_app_demo.models.Recipe;
 import com.example.android_app_demo.models.RecipeDetailsResponse;
 import com.example.android_app_demo.models.SimilarRecipesResponse;
 import com.example.android_app_demo.requestManager.RequestManager;
-import com.example.android_app_demo.ui.home.HomeFragment;
 import com.squareup.picasso.Picasso;
 
 import java.util.List;

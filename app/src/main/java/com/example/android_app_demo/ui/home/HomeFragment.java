@@ -3,6 +3,7 @@ package com.example.android_app_demo.ui.home;
 import android.annotation.SuppressLint;
 import android.app.ProgressDialog;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -14,22 +15,18 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.appcompat.widget.SearchView;
 import androidx.fragment.app.Fragment;
-import androidx.fragment.app.FragmentManager;
-import androidx.fragment.app.FragmentTransaction;
 import androidx.lifecycle.ViewModelProvider;
 import androidx.navigation.fragment.NavHostFragment;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.android_app_demo.NavDrawerActivity;
-import com.example.android_app_demo.NavDrawerViewModel;
+import com.example.android_app_demo.viewModels.NavDrawerViewModel;
 import com.example.android_app_demo.R;
 import com.example.android_app_demo.adapters.RandomRecipeAdapter;
 import com.example.android_app_demo.listeners.RandomRecipeResponseListener;
 import com.example.android_app_demo.listeners.RecipeClickListener;
 import com.example.android_app_demo.models.RandomRecipeApiResponse;
 import com.example.android_app_demo.requestManager.RequestManager;
-import com.example.android_app_demo.ui.chosenRecipe.ChosenRecipeFragment;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -47,10 +44,6 @@ public class HomeFragment extends Fragment {
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-
-//        FragmentTransaction fragmentTransaction = getParentFragmentManager().beginTransaction();
-//        fragmentTransaction.replace(R.)
-//        System.out.println("Fragments: "+getParentFragmentManager().getFragments());
 
         tags = new ArrayList<>();
         View view = inflater.inflate(R.layout.fragment_home, container, false);
@@ -92,9 +85,6 @@ public class HomeFragment extends Fragment {
         manager = new RequestManager(view.getContext());
         recyclerView = view.findViewById(R.id.recycler_random);
 
-//        manager.getRandomRecipes(randomRecipeResponseListener, tags);
-//        dialog.show();
-
         return view;
     }
 
@@ -110,7 +100,8 @@ public class HomeFragment extends Fragment {
 
         @Override
         public void didError(String message) {
-            Toast.makeText(requireView().getContext(), message, Toast.LENGTH_SHORT).show();
+            Log.v("Error", message);
+//            Toast.makeText(requireView().getContext(), message, Toast.LENGTH_SHORT).show();
         }
     };
     private final AdapterView.OnItemSelectedListener spinnerSelectedListener = new AdapterView.OnItemSelectedListener() {
@@ -144,5 +135,6 @@ public class HomeFragment extends Fragment {
     @Override
     public void onDestroyView() {
         super.onDestroyView();
+        dialog.dismiss();
     }
 }

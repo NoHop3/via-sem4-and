@@ -12,6 +12,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Androidappdemo">
         <activity
+            android:name=".SignInActivity"
+            android:exported="false" />
+        <activity
             android:name=".NavDrawerActivity"
             android:exported="true"
             android:label="@string/title_activity_nav_drawer"
