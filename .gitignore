@@ -14,3 +14,5 @@
 .cxx
 local.properties
 /.idea/misc.xml
+/gradle/wrapper/gradle-wrapper.properties
+/app/build.gradle
