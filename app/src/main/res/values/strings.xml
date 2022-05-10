@@ -10,20 +10,20 @@
     <string name="action_settings">Settings</string>
 
     <string-array name="tags">
-    <item>main course</item>
-    <item>side dish</item>
-    <item>dessert</item>
-    <item>appetizer</item>
-    <item>salad</item>
-    <item>bread</item>
-    <item>breakfast</item>
-    <item>soap</item>
-    <item>beverage</item>
-    <item>sauce</item>
-    <item>marinade</item>
-    <item>fingerFood</item>
-    <item>snack</item>
-    <item>drink</item>
+    <item>Main course</item>
+    <item>Side dish</item>
+    <item>Dessert</item>
+    <item>Appetizer</item>
+    <item>Salad</item>
+    <item>Bread</item>
+    <item>Breakfast</item>
+    <item>Soap</item>
+    <item>Beverage</item>
+    <item>Sauce</item>
+    <item>Marinade</item>
+    <item>FingerFood</item>
+    <item>Snack</item>
+    <item>Drink</item>
     </string-array>
 
     <string name="menu_home">Home</string>

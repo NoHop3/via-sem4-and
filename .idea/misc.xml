@@ -32,18 +32,32 @@
         <entry key="..\:/Users/sandu/AndroidStudioProjects/via-sem4-and/app/src/main/res/layout/activity_nav_drawer.xml" value="0.271875" />
         <entry key="..\:/Users/sandu/AndroidStudioProjects/via-sem4-and/app/src/main/res/layout/app_bar_nav_drawer.xml" value="0.271875" />
         <entry key="..\:/Users/sandu/AndroidStudioProjects/via-sem4-and/app/src/main/res/layout/fragment_home.xml" value="0.33" />
+        <entry key="..\:/Users/sandu/Documents/GitHub/via-sem4-and/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.252" />
+        <entry key="..\:/Users/sandu/Documents/GitHub/via-sem4-and/app/src/main/res/drawable/ic_launcher_background.xml" value="0.308" />
         <entry key="..\:/Users/sandu/Documents/GitHub/via-sem4-and/app/src/main/res/layout/activity_nav_drawer.xml" value="0.3625" />
+        <entry key="..\:/Users/sandu/Documents/GitHub/via-sem4-and/app/src/main/res/layout/activity_sign_in.xml" value="0.3625" />
         <entry key="..\:/Users/sandu/Documents/GitHub/via-sem4-and/app/src/main/res/layout/app_bar_nav_drawer.xml" value="0.3625" />
         <entry key="..\:/Users/sandu/Documents/GitHub/via-sem4-and/app/src/main/res/layout/content_nav_drawer.xml" value="0.3625" />
+        <entry key="..\:/Users/sandu/Documents/GitHub/via-sem4-and/app/src/main/res/layout/fragment_home.xml" value="0.14855072463768115" />
+        <entry key="..\:/Users/sandu/Documents/GitHub/via-sem4-and/app/src/main/res/layout/fragment_previous_shoppings.xml" value="0.24635416666666668" />
+        <entry key="..\:/Users/sandu/Documents/GitHub/via-sem4-and/app/src/main/res/layout/fragment_product_list.xml" value="0.24635416666666668" />
         <entry key="..\:/Users/sandu/Documents/GitHub/via-sem4-and/app/src/main/res/layout/fragment_recipe_details.xml" value="0.26197916666666665" />
+        <entry key="..\:/Users/sandu/Documents/GitHub/via-sem4-and/app/src/main/res/layout/fragment_shopping_list.xml" value="0.24635416666666668" />
         <entry key="..\:/Users/sandu/Documents/GitHub/via-sem4-and/app/src/main/res/layout/list_instructions.xml" value="0.3625" />
         <entry key="..\:/Users/sandu/Documents/GitHub/via-sem4-and/app/src/main/res/layout/list_instructions_step_items.xml" value="0.3625" />
         <entry key="..\:/Users/sandu/Documents/GitHub/via-sem4-and/app/src/main/res/layout/list_instructions_steps.xml" value="0.3625" />
+        <entry key="..\:/Users/sandu/Documents/GitHub/via-sem4-and/app/src/main/res/layout/list_meal_ingredients.xml" value="0.24635416666666668" />
+        <entry key="..\:/Users/sandu/Documents/GitHub/via-sem4-and/app/src/main/res/layout/list_random_recipe.xml" value="0.24635416666666668" />
         <entry key="..\:/Users/sandu/Documents/GitHub/via-sem4-and/app/src/main/res/layout/list_similar_recipe.xml" value="0.26197916666666665" />
         <entry key="..\:/Users/sandu/Documents/GitHub/via-sem4-and/app/src/main/res/layout/nav_header_nav_drawer.xml" value="0.3625" />
+        <entry key="..\:/Users/sandu/Documents/GitHub/via-sem4-and/app/src/main/res/layout/spinner_inner_text.xml" value="0.14855072463768115" />
+        <entry key="..\:/Users/sandu/Documents/GitHub/via-sem4-and/app/src/main/res/layout/spinner_text.xml" value="0.14855072463768115" />
         <entry key="..\:/Users/sandu/Documents/GitHub/via-sem4-and/app/src/main/res/menu/activity_main_drawer.xml" value="0.3625" />
         <entry key="..\:/Users/sandu/Documents/GitHub/via-sem4-and/app/src/main/res/menu/nav_drawer.xml" value="0.3625" />
         <entry key="..\:/Users/sandu/Documents/GitHub/via-sem4-and/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.3455" />
+        <entry key="..\:/Users/sandu/Documents/GitHub/via-sem4-and/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.252" />
+        <entry key="..\:/Users/sandu/Documents/GitHub/via-sem4-and/app/src/main/res/mipmap-anydpi-v26/launch.xml" value="0.252" />
+        <entry key="..\:/Users/sandu/Documents/GitHub/via-sem4-and/app/src/main/res/mipmap-anydpi-v26/launch_round.xml" value="0.252" />
       </map>
     </option>
   </component>
