@@ -22,7 +22,11 @@ public class SignInActivity extends AppCompatActivity {
     ActivityResultLauncher<Intent> activityResultLauncher = registerForActivityResult(
             new ActivityResultContracts.StartActivityForResult(), result -> {
                 if (result.getResultCode() == RESULT_OK)
+                {
+                    System.out.println("Going to main");
                     goToMainActivity();
+
+                }
                 else
                     Toast.makeText(this, "SIGN IN CANCELLED", Toast.LENGTH_SHORT).show();
             });
@@ -49,13 +53,9 @@ public class SignInActivity extends AppCompatActivity {
     }
 
     public void signIn(View v) {
-        List<AuthUI.IdpConfig> providers = Arrays.asList(
-                new AuthUI.IdpConfig.EmailBuilder().build());
 
         Intent signInIntent = AuthUI.getInstance()
                 .createSignInIntentBuilder()
-                .setAvailableProviders(providers)
-                .setLogo(R.drawable.ic_launcher_background)
                 .build();
 
         activityResultLauncher.launch(signInIntent);

@@ -77,4 +77,8 @@ public class NavDrawerActivity extends AppCompatActivity {
         finish();
     }
 
+    private void signOut() {
+        viewModel.signOut();
+    }
+
 }

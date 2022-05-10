@@ -2,6 +2,7 @@ package com.example.android_app_demo.ui.home;
 
 import android.annotation.SuppressLint;
 import android.app.ProgressDialog;
+import android.content.Context;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -33,6 +34,7 @@ import java.util.List;
 
 public class HomeFragment extends Fragment {
 
+    Context context;
     RecyclerView recyclerView;
     RandomRecipeAdapter randomRecipeAdapter;
     ProgressDialog dialog;
@@ -47,8 +49,12 @@ public class HomeFragment extends Fragment {
 
         tags = new ArrayList<>();
         View view = inflater.inflate(R.layout.fragment_home, container, false);
+        // App is looping infinitely here
+        System.out.println("Context -> " + view.getContext());
 
-        dialog = new ProgressDialog(view.getContext());
+        context = view.getContext();
+
+        dialog = new ProgressDialog(context);
         dialog.setTitle("Loading....");
 
         searchView = view.findViewById(R.id.searchView_home);
@@ -91,11 +97,13 @@ public class HomeFragment extends Fragment {
     private final RandomRecipeResponseListener randomRecipeResponseListener = new RandomRecipeResponseListener() {
         @Override
         public void didFetch(RandomRecipeApiResponse response, String message) {
-            dialog.dismiss();
-            recyclerView.setHasFixedSize(true);
-            recyclerView.setLayoutManager(new GridLayoutManager(HomeFragment.super.requireContext(), 1));
-            randomRecipeAdapter = new RandomRecipeAdapter(HomeFragment.super.requireContext(), response.recipes, recipeClickListener);
-            recyclerView.setAdapter(randomRecipeAdapter);
+            if(context!=null) {
+                dialog.dismiss();
+                recyclerView.setHasFixedSize(true);
+                recyclerView.setLayoutManager(new GridLayoutManager(context, 1));
+                randomRecipeAdapter = new RandomRecipeAdapter(context, response.recipes, recipeClickListener);
+                recyclerView.setAdapter(randomRecipeAdapter);
+            }
         }
 
         @Override
@@ -134,7 +142,7 @@ public class HomeFragment extends Fragment {
 
     @Override
     public void onDestroyView() {
-        super.onDestroyView();
         dialog.dismiss();
+        super.onDestroyView();
     }
 }
