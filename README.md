@@ -18,6 +18,7 @@
 | 5  | High | As a User I would like to see the required ingredients I need for a recipe in order to cook it.|    5     | ✔️      |
 | 6  | Low | As a User I would like to see the required equipment I need for a recipe in order to make it.  |    3     | ✔️      |
 | 7  | Low | As a User I would like to see similar recipes based on the one I have chosen so I can quickly navigate to based options  |    5     | ✔️      |
+| 8  | Low | As a User I would like to login so I can be authorized and secure  |    8     | ✔️      |
 
 ### Progress bar
 - [x] Initial commit of the app (14.03.2022)
