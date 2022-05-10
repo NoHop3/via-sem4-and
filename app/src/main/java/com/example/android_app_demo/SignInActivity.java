@@ -53,13 +53,9 @@ public class SignInActivity extends AppCompatActivity {
     }
 
     public void signIn(View v) {
-        List<AuthUI.IdpConfig> providers = Arrays.asList(
-                new AuthUI.IdpConfig.EmailBuilder().build());
 
         Intent signInIntent = AuthUI.getInstance()
                 .createSignInIntentBuilder()
-                .setAvailableProviders(providers)
-                .setLogo(R.drawable.ic_launcher_background)
                 .build();
 
         activityResultLauncher.launch(signInIntent);
