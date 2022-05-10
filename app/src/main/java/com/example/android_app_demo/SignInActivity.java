@@ -22,7 +22,11 @@ public class SignInActivity extends AppCompatActivity {
     ActivityResultLauncher<Intent> activityResultLauncher = registerForActivityResult(
             new ActivityResultContracts.StartActivityForResult(), result -> {
                 if (result.getResultCode() == RESULT_OK)
+                {
+                    System.out.println("Going to main");
                     goToMainActivity();
+
+                }
                 else
                     Toast.makeText(this, "SIGN IN CANCELLED", Toast.LENGTH_SHORT).show();
             });
