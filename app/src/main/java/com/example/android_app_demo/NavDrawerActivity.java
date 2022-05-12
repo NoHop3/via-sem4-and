@@ -33,20 +33,7 @@ public class NavDrawerActivity extends AppCompatActivity {
 
 
         binding = ActivityNavDrawerBinding.inflate(getLayoutInflater());
-        setContentView(binding.getRoot());
 
-        setSupportActionBar(binding.appBarNavDrawer.toolbar);
-        DrawerLayout drawer = binding.drawerLayout;
-        NavigationView navigationView = binding.navView;
-        // Passing each menu ID as a set of Ids because each
-        // menu should be considered as top level destinations.
-        mAppBarConfiguration = new AppBarConfiguration.Builder(
-                R.id.nav_home, R.id.nav_productList, R.id.nav_shoppingList, R.id.nav_previousShoppings)
-                .setOpenableLayout(drawer)
-                .build();
-        NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment_content_nav_drawer);
-        NavigationUI.setupActionBarWithNavController(this, navController, mAppBarConfiguration);
-        NavigationUI.setupWithNavController(navigationView, navController);
     }
 
     @Override
@@ -67,6 +54,20 @@ public class NavDrawerActivity extends AppCompatActivity {
         viewModel.getCurrentUser().observe(this, user -> {
             if (user != null) {
                 Log.v("Logging", "HELLO!!!" + viewModel.getCurrentUser().getValue().getEmail());
+                setContentView(binding.getRoot());
+
+                setSupportActionBar(binding.appBarNavDrawer.toolbar);
+                DrawerLayout drawer = binding.drawerLayout;
+                NavigationView navigationView = binding.navView;
+                // Passing each menu ID as a set of Ids because each
+                // menu should be considered as top level destinations.
+                mAppBarConfiguration = new AppBarConfiguration.Builder(
+                        R.id.nav_home, R.id.nav_productList, R.id.nav_shoppingList, R.id.nav_previousShoppings)
+                        .setOpenableLayout(drawer)
+                        .build();
+                NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment_content_nav_drawer);
+                NavigationUI.setupActionBarWithNavController(this, navController, mAppBarConfiguration);
+                NavigationUI.setupWithNavController(navigationView, navController);
             } else
                 startLoginActivity();
         });
