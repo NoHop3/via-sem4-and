@@ -33,6 +33,7 @@ public class NavDrawerActivity extends AppCompatActivity {
 
 
         binding = ActivityNavDrawerBinding.inflate(getLayoutInflater());
+       // getSupportActionBar().setTitle("FoodyRecipe");
 
     }
 

@@ -17,16 +17,17 @@
     <item>salad</item>
     <item>bread</item>
     <item>breakfast</item>
-    <item>soap</item>
+    <item>soup</item>
     <item>beverage</item>
     <item>sauce</item>
     <item>marinade</item>
-    <item>fingerFood</item>
+    <item>fingerfood</item>
     <item>snack</item>
     <item>drink</item>
     </string-array>
 
-    <string name="menu_home">Home</string>
+    <string name="menu_home">Recipes</string>
+    <string name="menu_logOut">Log Out</string>
     <string name="menu_productList">Product List</string>
     <string name="menu_shoppingList">Shopping List</string>
     <string name="click_me">CLICK ME!</string>

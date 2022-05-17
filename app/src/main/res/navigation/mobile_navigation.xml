@@ -34,10 +34,10 @@
     <fragment
         android:id="@+id/chosenRecipeFragment"
         android:name="com.example.android_app_demo.ui.chosenRecipe.ChosenRecipeFragment"
-        android:label="ChosenRecipeFragment"
+        android:label="FoodyRecipe"
         tools:layout="@layout/fragment_recipe_details">
-<!--        <action-->
-<!--            android:id="@+id/action_chosenRecipeFragment_to_nav_home"-->
-<!--            app:destination="@id/nav_home" />-->
+        <!--        <action-->
+        <!--            android:id="@+id/action_chosenRecipeFragment_to_nav_home"-->
+        <!--            app:destination="@id/nav_home" />-->
     </fragment>
 </navigation>
