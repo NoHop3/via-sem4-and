@@ -1,6 +1,6 @@
 <resources>
     <string name="app_name">FoodyRecipe</string>
-    <string name="api_key">9666ddf5af8f4e17ba48803fecba0a9b</string>
+    <string name="api_key">eae17159c2924135aad7d4ff9187f0be</string>
     <string name="title_activity_nav_drawer">FoodyRecipe</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
@@ -10,23 +10,26 @@
     <string name="action_settings">Settings</string>
 
     <string-array name="tags">
-    <item>Main course</item>
-    <item>Side dish</item>
-    <item>Dessert</item>
-    <item>Appetizer</item>
-    <item>Salad</item>
-    <item>Bread</item>
-    <item>Breakfast</item>
-    <item>Soap</item>
-    <item>Beverage</item>
-    <item>Sauce</item>
-    <item>Marinade</item>
-    <item>FingerFood</item>
-    <item>Snack</item>
-    <item>Drink</item>
+
+    <item>main course</item>
+    <item>side dish</item>
+    <item>dessert</item>
+    <item>appetizer</item>
+    <item>salad</item>
+    <item>bread</item>
+    <item>breakfast</item>
+    <item>soup</item>
+    <item>beverage</item>
+    <item>sauce</item>
+    <item>marinade</item>
+    <item>fingerfood</item>
+    <item>snack</item>
+    <item>drink</item>
+  
     </string-array>
 
-    <string name="menu_home">Home</string>
+    <string name="menu_home">Recipes</string>
+    <string name="menu_logOut">Log Out</string>
     <string name="menu_productList">Product List</string>
     <string name="menu_shoppingList">Shopping List</string>
     <string name="click_me">CLICK ME!</string>

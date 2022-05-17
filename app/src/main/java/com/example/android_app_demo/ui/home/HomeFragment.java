@@ -72,6 +72,7 @@ public class HomeFragment extends Fragment {
             public boolean onQueryTextChange(String newText) {
                 return false;
             }
+
         });
 
         // Cause of error #1-> spinner = spinner.findViewById() you cannot do that because spinner is not initialized!!!!

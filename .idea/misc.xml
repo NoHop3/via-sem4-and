@@ -15,8 +15,10 @@
         <entry key="..\:/Users/bird/AndroidStudioProjects/Androidappdemo/app/src/main/res/layout/fragment_product_list.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/bird/AndroidStudioProjects/Androidappdemo/app/src/main/res/layout/fragment_recipe_details.xml" value="0.1" />
         <entry key="..\:/Users/bird/AndroidStudioProjects/Androidappdemo/app/src/main/res/layout/fragment_shopping_list.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/bird/AndroidStudioProjects/Androidappdemo/app/src/main/res/layout/list_instructions_step_items.xml" value="0.15989583333333332" />
         <entry key="..\:/Users/bird/AndroidStudioProjects/Androidappdemo/app/src/main/res/layout/list_meal_ingredients.xml" value="0.1" />
         <entry key="..\:/Users/bird/AndroidStudioProjects/Androidappdemo/app/src/main/res/layout/list_random_recipe.xml" value="0.2" />
+        <entry key="..\:/Users/bird/AndroidStudioProjects/Androidappdemo/app/src/main/res/layout/list_similar_recipe.xml" value="0.15989583333333332" />
         <entry key="..\:/Users/bird/AndroidStudioProjects/Androidappdemo/app/src/main/res/layout/nav_header_nav_drawer.xml" value="0.264" />
         <entry key="..\:/Users/bird/AndroidStudioProjects/Androidappdemo/app/src/main/res/layout/previous_shoppings_fragment.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/bird/AndroidStudioProjects/Androidappdemo/app/src/main/res/layout/spinner_inner_text.xml" value="0.11666666666666667" />
@@ -36,23 +38,14 @@
         <entry key="..\:/Users/sandu/AndroidStudioProjects/via-sem4-and/app/src/main/res/layout/app_bar_nav_drawer.xml" value="0.271875" />
         <entry key="..\:/Users/sandu/AndroidStudioProjects/via-sem4-and/app/src/main/res/layout/fragment_home.xml" value="0.33" />
         <entry key="..\:/Users/sandu/Documents/GitHub/via-sem4-and/app/src/main/res/layout/activity_nav_drawer.xml" value="0.3625" />
-        <entry key="..\:/Users/sandu/Documents/GitHub/via-sem4-and/app/src/main/res/layout/activity_sign_in.xml" value="0.3625" />
         <entry key="..\:/Users/sandu/Documents/GitHub/via-sem4-and/app/src/main/res/layout/app_bar_nav_drawer.xml" value="0.3625" />
         <entry key="..\:/Users/sandu/Documents/GitHub/via-sem4-and/app/src/main/res/layout/content_nav_drawer.xml" value="0.3625" />
-        <entry key="..\:/Users/sandu/Documents/GitHub/via-sem4-and/app/src/main/res/layout/fragment_home.xml" value="0.1762917933130699" />
-        <entry key="..\:/Users/sandu/Documents/GitHub/via-sem4-and/app/src/main/res/layout/fragment_previous_shoppings.xml" value="0.1762917933130699" />
-        <entry key="..\:/Users/sandu/Documents/GitHub/via-sem4-and/app/src/main/res/layout/fragment_product_list.xml" value="0.3625" />
         <entry key="..\:/Users/sandu/Documents/GitHub/via-sem4-and/app/src/main/res/layout/fragment_recipe_details.xml" value="0.26197916666666665" />
-        <entry key="..\:/Users/sandu/Documents/GitHub/via-sem4-and/app/src/main/res/layout/fragment_shopping_list.xml" value="0.3625" />
         <entry key="..\:/Users/sandu/Documents/GitHub/via-sem4-and/app/src/main/res/layout/list_instructions.xml" value="0.3625" />
         <entry key="..\:/Users/sandu/Documents/GitHub/via-sem4-and/app/src/main/res/layout/list_instructions_step_items.xml" value="0.3625" />
         <entry key="..\:/Users/sandu/Documents/GitHub/via-sem4-and/app/src/main/res/layout/list_instructions_steps.xml" value="0.3625" />
-        <entry key="..\:/Users/sandu/Documents/GitHub/via-sem4-and/app/src/main/res/layout/list_meal_ingredients.xml" value="0.3625" />
-        <entry key="..\:/Users/sandu/Documents/GitHub/via-sem4-and/app/src/main/res/layout/list_random_recipe.xml" value="0.3625" />
         <entry key="..\:/Users/sandu/Documents/GitHub/via-sem4-and/app/src/main/res/layout/list_similar_recipe.xml" value="0.26197916666666665" />
         <entry key="..\:/Users/sandu/Documents/GitHub/via-sem4-and/app/src/main/res/layout/nav_header_nav_drawer.xml" value="0.3625" />
-        <entry key="..\:/Users/sandu/Documents/GitHub/via-sem4-and/app/src/main/res/layout/spinner_inner_text.xml" value="0.3625" />
-        <entry key="..\:/Users/sandu/Documents/GitHub/via-sem4-and/app/src/main/res/layout/spinner_text.xml" value="0.3625" />
         <entry key="..\:/Users/sandu/Documents/GitHub/via-sem4-and/app/src/main/res/menu/activity_main_drawer.xml" value="0.3625" />
         <entry key="..\:/Users/sandu/Documents/GitHub/via-sem4-and/app/src/main/res/menu/nav_drawer.xml" value="0.3625" />
       </map>

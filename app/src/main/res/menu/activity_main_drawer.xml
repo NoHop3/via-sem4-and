@@ -6,19 +6,26 @@
     <group android:checkableBehavior="single">
         <item
             android:id="@+id/nav_home"
-            android:icon="@drawable/ic_menu_camera"
+            android:icon="@drawable/ic_baseline_fastfood_24"
             android:title="@string/menu_home" />
+<!--        <item-->
+<!--            android:id="@+id/nav_productList"-->
+<!--            android:icon="@android:drawable/btn_star_big_on"-->
+<!--            android:title="@string/menu_productList" />-->
+<!--        <item-->
+<!--            android:id="@+id/nav_shoppingList"-->
+<!--            android:icon="@android:drawable/ic_input_add"-->
+<!--            android:title="@string/menu_shoppingList" />-->
+<!--        <item-->
+<!--            android:id="@+id/nav_previousShoppings"-->
+<!--            android:icon="@android:drawable/ic_menu_revert"-->
+<!--            android:title="@string/menu_previousShoppings" />-->
         <item
-            android:id="@+id/nav_productList"
-            android:icon="@android:drawable/btn_star_big_on"
-            android:title="@string/menu_productList" />
-        <item
-            android:id="@+id/nav_shoppingList"
-            android:icon="@android:drawable/ic_input_add"
-            android:title="@string/menu_shoppingList" />
-        <item
-            android:id="@+id/nav_previousShoppings"
-            android:icon="@android:drawable/ic_menu_revert"
-            android:title="@string/menu_previousShoppings" />
+            android:id="@+id/logOut"
+            android:icon="@drawable/ic_baseline_login_24"
+            android:title="@string/menu_logOut"
+
+            />
+
     </group>
 </menu>
