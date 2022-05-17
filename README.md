@@ -29,7 +29,7 @@
 - [x] Initial commit of the app (14.03.2022)
 - [x] Initial commit of README.md (14.03.2022) 
 - [x] First handin for the android app semester project (20.03.2022)
-- [ ] Working on android app period (21.03.2022 - 17.05.2022)
-- [ ] Handin of the android project (18.05.2022)
+- [x] Working on android app period (21.03.2022 - 17.05.2022)
+- [x] Handin of the android project (17.05.2022)
 
 ### [Youtube Preview of the app](https://youtu.be/QsW4cNSo92w)
