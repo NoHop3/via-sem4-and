@@ -33,3 +33,5 @@
 - [x] Handin of the android project (17.05.2022)
 
 ### [Youtube Preview of the app](https://youtu.be/QsW4cNSo92w)
+
+We got inspired by :Coding With Evan, UiLoverAndroid,Coding Bunch youtube chanels
