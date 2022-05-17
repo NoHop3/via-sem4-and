@@ -10,6 +10,7 @@
     <string name="action_settings">Settings</string>
 
     <string-array name="tags">
+
     <item>main course</item>
     <item>side dish</item>
     <item>dessert</item>
@@ -24,6 +25,7 @@
     <item>fingerfood</item>
     <item>snack</item>
     <item>drink</item>
+  
     </string-array>
 
     <string name="menu_home">Recipes</string>
