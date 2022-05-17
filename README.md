@@ -4,6 +4,10 @@
 ### App Requirements
 ![image](https://user-images.githubusercontent.com/82092907/158166131-3505404a-68cc-41ae-8492-ffe9cf5207d6.png)
 
+### Contributors
+- Alexandru Malai (304189)
+- Stefan Georgiev (304284)
+
 ### App Product backlog
 #### Estimates for story points on a scale of 1 to 10:
 - 1 -> 1-2 hours
@@ -27,3 +31,5 @@
 - [x] First handin for the android app semester project (20.03.2022)
 - [ ] Working on android app period (21.03.2022 - 17.05.2022)
 - [ ] Handin of the android project (18.05.2022)
+
+### [Youtube Preview of the app](https://youtu.be/QsW4cNSo92w)
